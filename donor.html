@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400' rel='stylesheet'
+        type='text/css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <section style="background: rgb(155, 54, 54); color: rgba(0, 0, 0, 0.5);">
+            <nav class="shift">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="patient.html">Patient</a></li>
+                    <li><a href="donorInfo.php">Donors in your area</a></li>
+                    <li><a href="patientInfo.php">People who need</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <section>
+        <div class="container-fluid mt-5">
+            <div class="row">
+                <div class="col-lg-6 col-sm-12">
+                    <h1 class="text-center text-danger fw-bolder ">14 June World Blood Donor Day
+                    </h1>
+                    <p>
+                        Every year countries around the world celebrate World Blood Donor Day (WBDD). The event serves
+                        to raise awareness of the need for safe blood and blood products and to thank voluntary, unpaid
+                        blood donors for their life-saving gifts of blood.
+
+                        A blood service that gives patients access to safe blood and blood products in sufficient
+                        quantity is a key component of an effective health system. The global theme of World Blood Donor
+                        Day changes each year in recognition of the selfless individuals who donate their blood for
+                        people unknown to them.
+                    </p>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <h1 class="text-center text-success fw-bolder">How to Donate
+                    </h1>
+                    <p class="text-start">To make an appointment to donate blood or platelets, please call us at
+                        <a href="#">01626484541</a> or email us at
+                        <a href="www.gmail.com">ashiquemurad@gmail.com</a>
+
+                        We ask that all donors be in good health and at least 17 years old or under age 75 (or have
+                        parental or physician consent), weigh at least 110 pounds, and show picture identification.
+
+                        If this is the first time that you’re donating blood and/or platelets, you may want to review
+                        our general donor guidelines and read our information about other specific requirements such as
+                        medicines that might affect your eligibility to be a donor and how frequently you are allowed to
+                        donate.
+
+                        Answers to other common questions about the donation process, the difference between donating
+                        blood and platelets, and what happens to your donation are available in our FAQs section.
+
+                        It is important that you make an appointment to donate as the Donor Room can only accommodate a
+                        limited number of donors in a single day. Please be flexible when scheduling your donation.
+
+                        Feel free to call us at 01626484541 with any additional questions you may have.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section>
+        <div class="container-fluid mt-5 mb-5 col-sm-12">
+            <img id="slider-img" class="img-fluid rounded mx-auto d-block" src=" image/1.jpg" alt="" srcset=""
+                style="width:50%; height:350px;">
+        </div>
+    </section>
+    <h1 class="fs-4 fw-bold text-success text-center mt-5 mb-3 container-fluid">
+        For donating Blood please fill up the form given below
+    </h1>
+    <section>
+        <div class="container mt-5 content-box ">
+            <div class="card text-dark bg-light mb-3" style="max-width: 80rem;">
+                <div class="card-body">
+                    <h1 class="text-center text-primary mb-5 fw-bolder">Registration Form</h1>
+                    <form action="donor.php" method="post" class="row g-3 needs-validation">
+                        <div class="col-lg-4">
+                            <label for="validationCustom01" class="form-label"><span
+                                    class="fw-bolder">Username</span></label>
+                            <input type="text" class="form-control" id="userName" name="userName" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="bloodGroup" class="form-label"><span class="fw-bolder">Blood
+                                    Group</span></label>
+                            <select id="bloodGroup" name="bloodGroup" class="form-select">
+                                <option selected>Choose</option>
+                                <option value="a+">A+</option>
+                                <option value="a-">A-</option>
+                                <option value="b+">B+</option>
+                                <option value="b-">B-</option>
+                                <option value="ab+">AB+</option>
+                                <option value="sb-">AB-</option>
+                                <option value="o+">O+</option>
+                                <option value="o-">O-</option>
+                            </select>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-4">
+                            <label for="Date" class="form-label"><span class="fw-bolder">Last Donation
+                                    Time</span></label>
+                            <input type="date" class="form-control" name="donateDate" id="donateDate" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <label for="validationCustom02" class="form-label"><span class="fw-bolder">Previous
+                                    Condition (write none if no disease history)</span></label>
+                            <input type="text" class="form-control" id="condition" name="condition">
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <label for="Region" class="form-label"><span class="fw-bolder">Region</span></label>
+                            <select id="region" class="form-select" name="region">
+                                <option selected>Choose</option>
+                                <option value="dhaka">Dhaka</option>
+                                <option value="Khulna">Khulna</option>
+                                <option value="Rajshahi">Rajshahi</option>
+                                <option value="Barishal">Barishal</option>
+                                <option value="Sylhet">Sylhet</option>
+                                <option value="Cumilla">Cumilla</option>
+                                <option value="Rangpur">Rangpur</option>
+                                <option value="Jessore">Jessore</option>
+                            </select>
+
+                            <div class="invalid-feedback">
+                                Please provide a valid region.
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2">
+                            <label for="criteria" class="form-label"><span class="fw-bolder">Donation
+                                    Criteria</span></label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="crit" value="blood">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Blood
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="crit" value="plasma">
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Plasma
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="crit" value="platelet">
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Platelets
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="crit" value="white">
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    White Blood Cell
+                                </label>
+                            </div>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+
+                        </div>
+                        <div class="col-lg-2">
+                            <label for="validationCustom03" class="form-label"><span class="fw-bolder">Phone
+                                    No.</span></label>
+                            <input type="text" class="form-control" name="phone" id="phone" required>
+                            <div class="invalid-feedback">
+                                Please provide a phone Number.
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                <label class="form-check-label" for="invalidCheck">
+                                    <span class="fw-bolder">Agree to terms and conditions</span>
+                                </label>
+                                <div class="invalid-feedback">
+                                    You must agree before submitting.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-danger rounded" type="submit">Submit form</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <section
+        style=" background-color: rgb(11, 14, 23);height: 30%;position: absolute;background-repeat:repeat-ys ;width:100%;">
+        <h1 class="fs-3 text-center text-white mt-5 justify-content-center align-content-center"><span
+                class="text-danger">Blood</span> Bank</h1>
+        <p class="fs-6 text-center text-white">Donate <span class="text-danger">Blood </span>Save <span
+                class="text-primary">Lives</span>.</p>
+        <footer>
+            <p class="text-center text-white">© 2021 Develop By BloodCon</p>
+        </footer>
+    </section>
+
+    <script src="js/donor.js"></script>
+
+</body>
+
+</html>

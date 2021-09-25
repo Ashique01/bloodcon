@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400' rel='stylesheet'
+        type='text/css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <section style="background: rgb(155, 54, 54); color: rgba(0, 0, 0, 0.5);">
+            <nav class="shift">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="donor.html">Donor</a></li>
+                    <li><a href="donorInfo.php">Donors in your area</a></li>
+                    <li><a href="patientInfo.php">People who need</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col mt-5">
+                    <h1 class=" fs-1 fw-bolder text-danger mb-3">What is Patient?</h1>
+                    <p class="fst-italic fw-light font-monospace">An outpatient (or out-patient) is a patient who
+                        attends an outpatient
+                        clinic
+                        with no plan to stay
+                        beyond the duration of the visit. Even if the patient will not be formally admitted with a note
+                        as an outpatient, their attendance are still registered, and the provider will usually give a
+                        note explaining the reason for the visit, tests or procedure/surgery, which should include the
+                        names and titles of the participating personnel, the patient's name and date of birth, signature
+                        of informed consent, estimated pre- and post-service time for a history and exam (before and
+                        after), any anesthesia, medications or future treatment plans needed, and estimated time of
+                        discharge absent any (further) complications. Treatment provided in this fashion is called
+                        ambulatory care. Sometimes surgery is performed without the need for a formal hospital admission
+                        or an overnight stay, and this is called outpatient surgery or "day surgery", which has many
+                        benefits including lowered healthcare cost, reducing the amount of medication prescribed and
+                        using the physician's or surgeon's time more efficiently. Outpatient surgery is suited best for
+                        more healthy patients undergoing minor or intermediate procedures (limited urologic,
+                        ophthalmologic, or ear, nose and throat procedures and procedures involving superficial skin and
+                        the extremities). More procedures are being performed in a surgeon's office, termed office-based
+                        surgery, rather than in a hospital-based operating room.</p>
+                    <h3 class="fw-bolder mt-3 mb-4 text-primary">How blood management system works for patient</h3>
+                    <p class="font-monospace fw-light">
+                        Patient Blood Management improves patient outcomes by improving the patient’s medical and
+                        surgical management in ways that boost and conserve the patient’s own blood. As a consequence of
+                        better management, patients usually require fewer transfusions of donated blood components thus
+                        avoiding transfusion-associated complications. The National Blood Authority is funding and
+                        managing the development of evidence-based, Patient Blood Management Guidelines. A
+                        multidisciplinary team determines, with the patient, the specific management plan, which makes
+                        every reasonable endeavour to optimise the patient’s own blood volume, minimise blood loss, and
+                        optimise the patient’s physiological tolerance of anaemia. There are various techniques to
+                        ensure this. For example, the Three Pillars of PBM [1] model depicted below helps to show how
+                        various practices can be initiated during pre-, intra- and post-operative stages of surgery.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid">
+            <div class="mt-5 center">
+                <h1 class="text-danger text-center  fw-bolder mb-2">Do You Need Blood? </h1>
+                <h3 class="text-success text-center  fw-bold">Fill up the form given below:</h3>
+            </div>
+
+        </div>
+
+    </section>
+    <section>
+        <div class="container  mt-5 content-box mx-auto  ">
+            <div class="card text-dark bg-light mb-3 " style="max-width: 80rem;">
+                <div class="card-body">
+                    <h1 class="text-center text-primary mb-5 fw-bolder">Registration Form</h1>
+                    <form action="patient.php" method="post" class="row g-3 needs-validation">
+                        <div class="col-lg-6">
+                            <label for="userName" class="form-label"><span class="fw-bolder">Username</span></label>
+                            <input type="text" class="form-control" name="userName" id="userName" value="" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="region" class="form-label"><span class="fw-bolder">Region</span></label>
+                            <select id="region" class="form-select" name="region">
+                                <option selected>Choose</option>
+                                <option value="dhaka">Dhaka</option>
+                                <option value="khulna">Khulna</option>
+                                <option value="rajshhi">Rajshahi</option>
+                                <option value="barishal">Barishal</option>
+                                <option value="sylhet">Sylhet</option>
+                                <option value="cumilla">Cumilla</option>
+                                <option value="rangpur">Rangpur</option>
+                                <option value="jessore">Jessore</option>
+                            </select>
+
+                            <div class="invalid-feedback">
+                                Please provide a valid region.
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <label for="bloodGroup" class="form-label"><span class="fw-bolder">Blood
+                                    Groups</span></label>
+                            <select id="bloodGroup" class="form-select" name="bloodGroup">
+                                <option selected>Choose</option>
+                                <option value="a+">A+</option>
+                                <option value="a-">A-</option>
+                                <option value="b+">B+</option>
+                                <option value="b">B-</option>
+                                <option value="ab+">AB+</option>
+                                <option value="ab">AB-</option>
+                                <option value="o+">O+</option>
+                                <option value="o-">O-</option>
+                            </select>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <label for="Necessity" class="form-label"><span class="fw-bolder">Necessity</span></label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="necessity" value="necessity"
+                                    id="Necessity">
+                                <label class="form-check-label" for="Necessity">
+                                    Blood
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="necessity" value="plasma"
+                                    id="Necessity">
+                                <label class="form-check-label" for="Necessity">
+                                    Plasma
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="Necessity" value="platelets"
+                                    id="Necessity">
+                                <label class="form-check-label" for="Necessity">
+                                    Platelets
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="Necessity" value="white"
+                                    id="Necessity">
+                                <label class="form-check-label" for="Necessity">
+                                    White Blood Cell
+                                </label>
+                            </div>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="phoneNumber" class="form-label"><span class="fw-bolder">Phone No.</span></label>
+                            <input type="number" class="form-control" name="phoneNumber" id="phoneNumber" required>
+                            <div class="invalid-feedback">
+                                Please provide a phone Number.
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                <label class="form-check-label" for="invalidCheck">
+                                    <span class="fw-bolder">Agree to terms and conditions</span>
+                                </label>
+                                <div class="invalid-feedback">
+                                    You must agree before submitting.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-danger rounded" type="submit">Submit form</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </section>
+    <section
+        style=" background-color: rgb(11, 14, 23);height: 30%;position: absolute;background-repeat:repeat-ys ;width:100%;">
+        <h1 class="fs-3 text-center text-white mt-5 justify-content-center align-content-center"><span
+                class="text-danger">Blood</span> Bank</h1>
+        <p class="fs-6 text-center text-white">Donate <span class="text-danger">Blood </span>Save <span
+                class="text-primary">Lives</span>.</p>
+        <footer>
+            <p class="text-center text-white">© 2021 Develop By BloodCon</p>
+        </footer>
+    </section>
+
+</body>
+
+</html>
+
+
+
+<div class="form-floating">
+    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+    <label for="floatingTextarea">Necessity</label>
+</div>
