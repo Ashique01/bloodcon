@@ -9,7 +9,7 @@
 
 	$conn = new mysqli('localhost', 'root', '', 'bloodcon');
 	if($conn->connect_error){
-		die('Connection Failed :'.@conn->connect_error);
+		die('Connection Failed :'.$conn->connect_error);
 	}else{
 		$stmt = $conn->prepare("insert into patient(userName, phoneNumber, region, bloodGroup, necessity) values(?, ?, ?, ?, ?)" );
 		$stmt->bind_param("sssss", $userName, $phoneNumber, $region, $bloodGroup, $necessity);
@@ -17,5 +17,3 @@
 		echo $refer;
 		$stmt->close();
 	}
-
-?>
